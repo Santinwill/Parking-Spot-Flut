@@ -17,7 +17,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: Header(context),
         drawer: Menu(context),
         body: Center(
-          child: Text("Bem Vindo!"),
+          child: Text("Welcome!"),
         ));
   }
 }

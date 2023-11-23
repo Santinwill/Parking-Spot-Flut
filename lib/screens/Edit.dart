@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -8,6 +7,7 @@ import '../components/Header.dart';
 import '../components/Menu.dart';
 import '../controllers/ParkingSpot.dart';
 import '../models/ParkingSpot.dart';
+import '../screens/Lista.dart';
 
 class Edit extends StatefulWidget {
   Edit({Key? key, required this.objeto}) : super(key: key);
@@ -78,6 +78,10 @@ class _EditPageState extends State<Edit> {
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: Colors.lightGreen,
           colorText: Colors.white,
+        );
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ListaPage()),
         );
       } else {
         Get.snackbar("Houve um erro", response,
