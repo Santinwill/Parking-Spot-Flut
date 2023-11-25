@@ -62,7 +62,7 @@ class Create extends StatelessWidget {
           MaterialPageRoute(builder: (context) => ListaPage()),
         );
       } else {
-        Get.snackbar("Houve um erro", "Deu ruim",
+        Get.snackbar("Erro", "Confira os dados Preenchidos",
             icon: Icon(Icons.error, color: Colors.white),
             snackPosition: SnackPosition.BOTTOM,
             backgroundColor: Colors.blue,
